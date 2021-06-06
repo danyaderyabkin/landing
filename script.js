@@ -71,6 +71,38 @@ let more = document.querySelector('.hidden'),
         closeLastPopup.addEventListener('click', function () {
             popupS.style.display = 'none';
         });
+
+//btn-hover 
+
+        let btnHover = document.querySelector('.btn-hover'),
+            doMain = document.getElementsByClassName('do-main');
+
+        for(i=0; i<doMain.length; i++) {
+        doMain[i].addEventListener('mouseover', openModal);
+        doMain[i].addEventListener('mouseout', openClose);
+        }
+
+        function openModal () {
+            if(doMain.length > 0) {
+                btnHover.style.display = 'block';
+            }
+        }
+
+        function openClose () {
+            if(this.children.length > 0) {
+                btnHover.style.display = 'none';
+            }
+        }
+        
+//form-call
+
+        let formCall= document.querySelector('.form-call');
+
+        formCall.addEventListener('click', function () {
+            form.style.display = 'block';
+        });
+        
+
         
 
 

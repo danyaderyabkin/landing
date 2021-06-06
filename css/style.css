@@ -41,25 +41,33 @@ button:hover {
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
-    font-size: 15px;
+    font-size: 14px;
     margin: 0 auto;
     border-bottom: 2px solid #F2F2F2;
 }
 
+.burger { 
+    display: none;
+    font-size: 30px;
+    color: rgb(6, 6, 100);
+}
+
 .logo {
     background-repeat: no-repeat;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 58px;
 }
 
 .main-menu {
     display: flex;
+    padding: 0;
 }
+
 
 .link {
     color: black;
-    padding-bottom: 15px;
-    margin-right: 20px;
+    padding-bottom: 13px;
+    margin-right: 32px;
 }
 
 .link:hover {
@@ -123,10 +131,13 @@ button:hover {
 
 }
 
+.main-list li:hover {
+    cursor: pointer;
+}
+
 .list {
-    padding: 90px 70px;
-    width: 20%;
-    height: 140px;
+    padding: 70px 0 70px;
+    width: 26%;
     text-align: center;
     box-shadow: 0 0 1px rgba(0,0,0,0.5);
 }
@@ -157,6 +168,12 @@ button:hover {
     background-image: url(../img/finboss.png);
     background-repeat: no-repeat;
     background-position: right;
+}
+
+.info-media {
+    text-align: center;
+    margin: 0 auto;
+    display: none;
 }
 
 .last-info {
@@ -200,44 +217,46 @@ button:hover {
 }
 
 .list-second {
+    display: flex;
     justify-content: space-around;
-    max-width: 90%;
+    max-width: 75%;
+    margin: 0 auto;
 }
-
-.svg-align-main {
-    background-color: #F2F2F2;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 40px;
-}
-
-.svg-align-second {
-    background-color: #E9862A;
+.svg-main {
+    background-color: #f2f2f2;
     border-radius: 50%;
     width: 100px;
     text-align: center;
     height: 100px;
-    margin: 0 auto 40px;
+    margin: 0 auto;
 }
 
-.svg-main {
-    margin-top: 35px;
+.svg-bg {
+    background-color: #E9862A;
 }
 
-.svg-second {
-    margin: 31px 0 0 27px;
-}
-
-.svg-third {
-    margin: 35px 0 0 35px;
+.svg {
+    margin-top: 30px;
 }
 
 .do-main {
     box-shadow: none;
-    width: 18%;
-    min-height: 280px;
+    width: 22%;
+    text-align: center;
+    padding: 30px;
 } 
+
+.do-main:hover {
+    cursor: pointer;
+}
+
+.do-main:hover {
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.125);
+}
+
+.do-main p {
+    margin-top: 50px;
+}
 
 .btn-about {
     padding: 20px;
@@ -246,6 +265,11 @@ button:hover {
     border: 1px solid #EBEBEB;
     color: #187CD3;
     cursor: pointer;
+}
+
+.btn-hover {
+    display: none;
+    text-align: center;
 }
 
 .item-second {
@@ -406,6 +430,9 @@ button:hover {
     width: 100px;
     margin: 0 auto;
 }
+.svg-second {
+    margin-top: 32px;
+}
 
 /* story-success */
 
@@ -417,6 +444,10 @@ button:hover {
     background-repeat: no-repeat;
     background-position: 1120px 20px, right bottom;
     margin: 100px auto 100px;
+}
+
+.adaptive-img {
+    display: none;
 }
 
 .story-success h2 {
@@ -446,8 +477,11 @@ button:hover {
 }
 
 .last-svg {
+    background-color: #E9862A;
+    border-radius: 50%;
     width: 70px;
     height: 70px;
+    margin: 0 auto;
 }
 
 .svg-end {
@@ -478,6 +512,10 @@ button:hover {
 .footer-last {
     text-align: center;
     margin: 50px 0 100px;
+}
+
+.cadesign {
+    display: none;
 }
 
 .lists-footer-info {
@@ -594,6 +632,280 @@ button:hover {
  }
 
  .popup-success {
-     text-align: center;
+    text-align: center;
     padding: 51px 165px 40px 150px;
+ }
+
+ @media screen and (max-width: 1024px) {
+
+    .heading {
+        padding: 50px 0 0 70px;
+    }
+
+    .team {
+        height: 430px;
+        background-image: url(../img/finy1.png), 
+                          url(../img/Union.png),
+                          url(../img/image.jpg);
+        background-repeat: no-repeat;
+        background-position: 450px, -250px, right;
+    }
+
+    .video-1 {
+        background: url(../img/image1.jpg);
+        max-width: 100%;
+        background-position: center;
+    }
+
+    .list {
+        width: 33%;
+        height: auto;
+    }
+
+    .link {
+        margin-right: 10px;
+    }
+
+    .logo {
+        padding-left: 5px;
+    }
+
+    .lists-property {
+        width: 25%;
+        margin: 10px;
+    }
+
+    .story-success {
+        background-image: url(../img/Untitled-18\ 1.png), url(../img/Groupp.png);
+        background-repeat: no-repeat;
+        background-position: 650px 20px, right bottom
+    }
+
+    .close-popup {
+        padding: 15px 25px;
+        position: absolute;
+        top: 15px;
+        right: 50px;
+    }
+
+}
+
+ @media screen and (max-width: 768px) {
+
+    /* header */
+
+    .header {
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+        border: none;
+    } 
+    
+    .burger {
+        display: block;
+    }
+    
+    .menu {
+         display: none;
+     }
+
+     .logo {
+         padding: 0;
+     }
+
+     /* team */
+
+     .team {
+        background-image: url(../img/finy1.png),
+                          url(../img/Union.png),
+                          url(../img/image.jpg);
+        background-repeat: no-repeat;
+        background-position: 250px 50px, -410px 0, left;
+     }
+
+     .team, h1 {
+         margin: 0;
+         font-size: 25px;
+     }
+
+     .heading {
+         padding: 90px 0 0 30px;
+         width: 460px;
+     }
+
+     /* info */
+
+     .main-info {
+         max-width: 90%;
+         display: block;
+     }
+
+     .info {
+        max-width: 90%;
+        height: 400px;
+        padding-top: 60px;
+        margin-left: 100px;
+        background-image: url(../img/finboss.png);
+        background-repeat: no-repeat;
+        background-position: center;
+     }
+
+     .text {
+         width: 88%;
+         margin: 50px auto;
+     }
+
+     .hidden-info {
+         display: none;
+     }
+
+     .info-adress-main {
+        margin: 0 auto;
+        font-size: 22px;
+        width: 88%;
+        margin-top: 60px;
+        text-align: center;
+     }
+
+     .info-media {
+         display: block;
+     }
+
+     /* section-do */ 
+
+     .list-second {
+        padding: 0;
+        max-width: 99%;
+     }
+
+     .do-main {
+        box-shadow: none;
+        width: 30%;
+        text-align: center;
+        padding: 0;
+    }
+
+     /* video */
+
+     .video-1 {
+        background: url(../img/image1.jpg);
+        background-position: center;
+        max-width: 100%;
+        margin-top: 30px;
+     }
+
+     /* property */
+
+     .property {
+        background-color: #F2F2F2;
+        padding: 50px 0 50px;
+        margin: 0 auto 100px;
+    }
+
+    .list-property {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .lists-property {
+        width: 27%;
+        margin: 0;
+        background-color: #fff;
+        padding: 18px;
+        line-height: 23px;
+    }
+
+    /* offers */
+
+    .text-offer {
+        width: 77%;
+        margin: 0 40% 80px 1%; 
+    }
+
+    /* students */
+
+    .list-students {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .lists-students {
+        width: 40%;
+        padding-top: 35px;
+        text-align: center;
+    }
+
+    .lists-students:not(:last-child) {
+            padding-right: 0;
+    }
+
+    .study-paragraph {
+        padding: 28px 0 20px 0;
+    }
+
+    /* story-success */
+
+    .story-success {
+        text-align: center;
+        background: none;
+        height: 550px;
+        width: 90%;
+    }
+
+    .adaptive-img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .story-success h2 {
+        margin: 0 auto 50px;
+    }
+
+    .last-info {
+        margin-left: 0;
+    }
+
+    .story-success a{
+        display: none;
+    }
+
+    /* footer */
+
+    .cadesign {
+        display: block;
+        margin-top: 35px;
+    }
+
+    .footer-last {
+        margin: 30px 0 30px;
+    }
+    .last-svg {
+        display: none;
+    }
+
+    /* popup */
+
+    .popup {
+        width: 750px;
+        padding: 9px;
+    }
+
+    .close-popup {
+        padding: 15px 25px;
+        position: absolute;
+        top: 15px;
+        right: 50px;
+    }
+
+    .popup-heading {
+        margin: 85px 0;
+    }
+
+    .confidence input{
+        margin: 20px 1px 20px 50px;
+    }
+
+    .paragrph {
+        padding-bottom: 50px;
+    }
  }
