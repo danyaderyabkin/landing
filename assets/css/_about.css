@@ -1,0 +1,271 @@
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.about__text {
+  max-width: 1235px;
+}
+
+.about__cards-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  width: calc(870 / 1770 * 100%);
+}
+
+.about__card {
+  flex-grow: 1;
+}
+
+.about__card:not(:last-child) {
+  margin-bottom: 32px;
+}
+.card {
+  border-radius: 15px;
+  box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.1);
+}
+.card__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 870px;
+  min-height: 622px;
+  background-color: var(--gray-blue);
+  background-image: url(../../img/Re.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card-detail__content {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  color: var(--white);
+  background-color: var(--dark-transparent);
+}
+
+.card-detail__text {
+  max-width: 455px;
+  margin-top: 0;
+  margin-right: 40px;
+  margin-bottom: 0;
+  font-weight: var(--bold);
+  line-height: 32px;
+}
+
+.card-detail__btn {
+  margin-left: auto;
+}
+
+@media (max-width: 1440px) {
+  .about__column {
+    width: 100%;
+  }
+
+  .about__column:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .about__card {
+    align-items: flex-start;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+
+  .about__card--small {
+    width: calc(50% - 32px / 2);
+    margin-bottom: 32px;
+  }
+
+  .card-detail__content {
+    width: 100%;
+  }
+
+  .about__column--small-cards {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .card {
+    padding: 64px 140px 64px 75px;
+  }
+
+  .about__column--small-cards {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .about__card--small {
+    margin-bottom: 0;
+  }
+
+  .about__card--small {
+    width: 100%;
+  }
+
+  .card::before {
+    width: calc(190 / (924 - 75 - 140) * 100%);
+    padding-top: calc(165 / (924 - 75 - 140) * 100%);
+  }
+
+  .section-title {
+    margin-bottom: 10px;
+  }
+
+  .card-detail {
+    min-height: 640px;
+  }
+
+  .card-detail__content {
+    width: 100%;
+  }
+
+  .about__text {
+    margin-bottom: 63px;
+  }
+}
+
+@media (max-width: 960px) {
+  .card-detail__content {
+    padding: 34px 40px;
+  }
+
+  .card-detail__text {
+    max-width: 366px;
+  }
+
+  .card-detail {
+    min-height: 650px;
+  }
+
+  .card {
+    align-items: center;
+    padding: 34px 44px 34px 40px;
+  }
+
+  .about__card--small {
+    width: 100%;
+  }
+
+  .card::before {
+    align-self: center;
+    width: calc(114 / (668 - 40 - 46) * 100%);
+    margin-right: 16px;
+    padding-top: calc(99 / (668 - 40 - 46) * 100%);
+  }
+}
+
+@media (max-width: 660px) {
+  .card-detail__text {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .card-detail__btn {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .card-detail {
+    display: block;
+    background-color: transparent;
+    background-image: url("../../img/Rec-320.jpg");
+    background-size: 0;
+  }
+
+  .card-detail::before {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    padding-top: calc(200 / 290 * 100%);
+    background-color: var(--gray-blue);
+    background-image: inherit;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card-detail__content {
+    padding: 0;
+    color: var(--dark);
+    background-color: transparent;
+    flex-wrap: wrap;
+  }
+
+  .card-detail__text {
+    font-size: 14px;
+    font-weight: var(--regular);
+    line-height: 28px;
+  }
+
+  .card-detail {
+    min-height: auto;
+  }
+
+  .card {
+    flex-wrap: wrap;
+    padding: 0;
+    border: none;
+  }
+
+  .card::before {
+    width: 64px;
+    padding-top: 56px;
+    margin-bottom: 6px;
+  }
+
+  .card__title {
+    font-size: 18px;
+    font-weight: var(--medium);
+    line-height: 22px;
+    margin-bottom: 3px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+
+  .about__text {
+    margin-bottom: 15px;
+  }
+
+  .card-detail__text {
+    margin-bottom: 10px;
+  }
+
+  .about__column:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+}
