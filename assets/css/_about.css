@@ -45,7 +45,6 @@
   max-width: 870px;
   min-height: 622px;
   background-color: var(--gray-blue);
-  background-image: url(../../img/Re.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -198,7 +197,6 @@
   .card-detail {
     display: block;
     background-color: transparent;
-    background-image: url("../../img/Rec-320.jpg");
     background-size: 0;
   }
 
