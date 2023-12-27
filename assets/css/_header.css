@@ -232,6 +232,11 @@
   }
 }
 
+@media (max-width: 960px) {
+  .nav__item {
+    margin-right: 0;
+  }
+}
 @media (max-width: 800px) {
   .header {
     min-height: 69px;
